@@ -8,28 +8,43 @@
 </head>
 <body>
     <script>
+
+        let answer = parseInt(prompt("Choose a number to FizzBuzz"));
+
+        for (i = 1; i <= answer; i++) {
+            if (i % 3 === 0 && i % 5 === 0){
+                console.log("FizzBuzz");
+            }   else if (i % 3 === 0){
+                console.log("Fizz");
+            }   else if (i % 5 === 0){
+                console.log("Buzz");
+            }   else {
+                console.log(i);
+            }
+        }
+
+
         //a function that takes one number and returns that number + 7.
-        function add7(number){
-            let x = number + 7
-            console.log(x);
-        }
-        //a function that takes 2 numbers and returns their product.
-        function multiply(x, y){
-            let z = x * y
-            console.log(z);
-        }
-        //a function that takes a string and returns that string 
-        //with only the first letter capitalized.
-        function capitalize(str){
-            str = str.toString();
-            const upper = str[0].toUpperCase() + str.slice(1).toLowerCase();
-            console.log(upper);
-        }
-        //a function that takes a string and returns the very last letter of that string
-        function lastLetter(word){
-            const last = word[word.length - 1];
-            console.log(last);
-        }
+        // function add7(number){
+        //     let x = number + 7
+        //     console.log(x);
+        // }
+        // //a function that takes 2 numbers and returns their product.
+        // function multiply(x, y){
+        //     let z = x * y
+        //     console.log(z);
+        // }
+        // //a function that takes a string and returns that string 
+        // //with only the first letter capitalized.
+        // function capitalize(str){
+        //     const upper = str[0].toUpperCase() + str.slice(1).toLowerCase();
+        //     console.log(upper);
+        // }
+        // //a function that takes a string and returns the very last letter of that string
+        // function lastLetter(word){
+        //     const last = word[word.length - 1];
+        //     console.log(last);
+        // }
     </script>
 </body>
 </html>
